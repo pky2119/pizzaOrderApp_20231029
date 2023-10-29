@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import kr.ac.wku.pizzaorderapp_20231029.R
 import kr.ac.wku.pizzaorderapp_20231029.datas.StoreData
 
@@ -36,7 +37,7 @@ class StoreAdapter(
 
         txtStoreName.text = data.name
 
-
+        Glide.with(mContext).load(data.logoURL).into(imgLogo)
 
 
         return row
