@@ -4,4 +4,6 @@ class StoreData (
     val name: String,
     val phoneNum : String,
     val logoURL: String ){
+
+
 }
